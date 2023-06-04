@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF80719E">
-        <TextBox HorizontalAlignment="Left" Margin="68,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="68,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="68,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="68,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLName" HorizontalAlignment="Left" Margin="68,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtJob" HorizontalAlignment="Left" Margin="68,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <Label Content="First Name" HorizontalAlignment="Left" Margin="68,88,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="68,152,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Job" HorizontalAlignment="Left" Margin="68,215,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
@@ -23,6 +23,9 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button Content="Preload" HorizontalAlignment="Left" Margin="68,390,0,0" VerticalAlignment="Top" Height="24" Width="155"/>
+        <Button Content="Save CSV" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="24" Width="156"/>
+        <Button Content="Load CSV" HorizontalAlignment="Left" Margin="553,390,0,0" VerticalAlignment="Top" Height="24" Width="156"/>
 
     </Grid>
 </Window>

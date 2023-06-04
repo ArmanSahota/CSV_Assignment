@@ -28,18 +28,28 @@ namespace CSV_Assignment
             InitializeComponent();
             Preload();
 
-        }
+            lvDisplay.ItemsSource = persons;
+
+        } // MainWindow()
 
         private void btnAddPerson_Click(object sender, RoutedEventArgs e)
         {
+            string fName = txtFName.Text;
+            string lName = txtLName.Text;
+            string job = txtJob.Text;
 
-        }
+            persons.Add(new Person(fName, lName, job));
+
+            lvDisplay.Items.Refresh();
+
+        } // benAddPerson_Click
 
         public void Preload()
         {
             persons.Add(new Person("Will", "Cram", "Professor"));
             persons.Add(new Person("Josh", "Emery", "Professor"));
-        }
+            persons.Add(new Person("Sarah", "Hoaglin", "Behavioral Health Specialist"));
+        } // Preload()
 
-    }
-}
+    } // class
+} // namespace
