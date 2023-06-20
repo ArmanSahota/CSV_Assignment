@@ -23,8 +23,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Preload" HorizontalAlignment="Left" Margin="68,390,0,0" VerticalAlignment="Top" Height="24" Width="155"/>
-        <Button Content="Save CSV" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="24" Width="156"/>
+        <Button Content="Save CSV" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="24" Width="156" Click="Button_Click"/>
         <Button Content="Load CSV" HorizontalAlignment="Left" Margin="553,390,0,0" VerticalAlignment="Top" Height="24" Width="156"/>
 
     </Grid>
